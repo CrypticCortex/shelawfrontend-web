@@ -1,5 +1,3 @@
-import { color } from "chart.js/helpers";
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
