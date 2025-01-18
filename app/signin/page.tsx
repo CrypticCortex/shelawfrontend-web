@@ -27,6 +27,8 @@ export default function SignIn() {
       await Config.getInstance().fetchNgrokUrls();
       const baseUrl = Config.getInstance().apiBaseUrl;
 
+      console.log(`API BASE ${baseUrl}`);
+
       // Make login request
       const response = await fetch(`${baseUrl}/auth/login`, {
         method: "POST",

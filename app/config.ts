@@ -23,6 +23,7 @@ class Config {
     try {
       const response = await fetch("https://crypticcortex.github.io/ngrok-usecase/");
       if (!response.ok) {
+        console.log(`Response from githubpages is ${response}`)
         console.error("Failed to fetch ngrok URLs:", response.status, response.statusText);
         return;
       }
